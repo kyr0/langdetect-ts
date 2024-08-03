@@ -2,7 +2,7 @@
 
   # langdetect-ts
 
-  ### Google langdetect for the web platform. Detects 55 languages of of the box. Minimum 1 sentence input for >90% accurracy.
+  ### Google langdetect for the web platform. Detects 55 languages of of the box. Minimum 1 sentence input for >90% accuracy.
 
 </span>
 

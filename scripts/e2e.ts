@@ -25,7 +25,7 @@ const now = performance.now();
 console.log("Took:", (now - before).toFixed(2), 'ms');
 
 // accuracy increases with less candidates in the selection, while runtime speed increases as well,
-// with 2 to 11 candiates, accurracy approaches > 98%.
+// with 2 to 11 candiates, accuracy approaches > 98%.
 
 console.log('e2e: bi: 1/2 detection on sentences:')
 
