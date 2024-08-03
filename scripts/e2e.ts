@@ -16,6 +16,10 @@ console.log('Should be de:', detectDe)
 const detectEn = detectLanguage("Hello world! How are you?", allLanguages as unknown as Array<LangProfile>)
 console.log('Should be en:', detectEn)
 
+// ru out of 55 candidates
+const detectRu = detectLanguage("Привет, мир! Как у тебя дела?", allLanguages as unknown as Array<LangProfile>)
+console.log('Should be ru:', detectRu)
+
 const now = performance.now();
 
 console.log("Took:", (now - before).toFixed(2), 'ms');
@@ -28,13 +32,14 @@ console.log('e2e: bi: 1/2 detection on sentences:')
 // accuracy is > 90% mean with 55 langage candidates (all)
 const beforeBi = performance.now();
 
-// de out of 55 candidates
+// de out of 2 candidates
 const detectDeBi = detectLanguage("Hallo, Welt, wie geht es Dir?", [de, en] as unknown as Array<LangProfile>)
 console.log('bi: Should be de:', detectDeBi)
 
-// en out of 55 candidates
+// en out of 2 candidates
 const detectEnBi = detectLanguage("Hello world! How are you?", [de, en] as unknown as Array<LangProfile>)
 console.log('bi: Should be en:', detectEnBi)
+
 
 const nowBi = performance.now();
 
