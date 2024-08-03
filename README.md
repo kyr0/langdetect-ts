@@ -24,11 +24,11 @@ import allLanguages from "langdetect-ts/profiles/all.json";
 
 // de out of 55 candidates
 const detectDe = detectLanguage("Hallo, Welt, wie geht es Dir?", allLanguages)
-console.log('Should be de:', detectDe)
+console.log('Should be de:', detectDe) // "de"
 
 // en out of 55 candidates
 const detectEn = detectLanguage("Hello world! How are you?", allLanguages)
-console.log('Should be en:', detectEn)
+console.log('Should be en:', detectEn) // "en"
 ```
 
 ### 3. Optimized usage
@@ -42,9 +42,9 @@ import en from "langdetect-ts/profiles/en.json";
 
 // de out of 55 candidates
 const detectDe = detectLanguage("Hallo, Welt, wie geht es Dir?", [de, en])
-console.log('Should be de:', detectDe)
+console.log('Should be de:', detectDe) // "de"
 
 // en out of 55 candidates
 const detectEn = detectLanguage("Hello world! How are you?", [de, en])
-console.log('Should be en:', detectEn)
+console.log('Should be en:', detectEn) // "en"
 ```
