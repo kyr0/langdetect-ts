@@ -1,0 +1,37 @@
+{
+  "name": "langdetect-ts",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Google langdetect for the web platform. Detects 55 languages of of the box. Minimum 1 sentence input for >90% accurracy.",
+  "keywords": ["language", "detection", "nlp", "langdetect"],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "e2e": "tsx scripts/e2e.ts",
+    "test": "vitest",
+    "build": "tsx scripts/build.ts"
+  },
+  "author": "Aron Homberg <info@aron-homberg.de>",
+  "license": "MIT",
+  "files": ["dist", "README.md", "LICENSE", "package.json"],
+  "devDependencies": {
+    "@biomejs/biome": "^1.6.4",
+    "@jsheaven/perf": "^1.1.1",
+    "@types/node": "^22.1.0",
+    "pkgroll": "^2.1.1",
+    "tsx": "^4.16.2",
+    "typescript": "^5.0.0",
+    "vitest": "^1.6.0"
+  }
+}
